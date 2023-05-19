@@ -14,7 +14,7 @@ function App() {
     },
     {
       "user" : "gpt",
-      "message": "Welcome! I'm an AI assistant developed by Shabari, and my primary goal is to ensure you have the best possible experience. \nI'm equipped with extensive knowledge and advanced capabilities, allowing me to provide you with accurate information, address your inquiries, and offer assistance in various areas. \nFrom tackling intricate problem-solving tasks to providing guidance on specific subjects, I'm here to support you. \nAdditionally, if you're in the mood for a friendly chat,\nI'm more than happy to engage in a conversation with you. \nDon't hesitate to ask me anything you'd like—I'm here to provide you with comprehensive and helpful responses."
+      "message": "Warm greetings! I am thrilled to introduce myself as your AI assistant, created by Shabari and integrated with the power of Bing. My mission is to serve as your dependable source of information, your trusted problem-solving companion, and your knowledgeable guide. With the combined expertise of Shabari and the vast resources of Bing, I am equipped to assist you with a wide range of topics. Whether you require assistance with intricate challenges, seek guidance on specific subjects, or simply desire an enjoyable conversation, I am here to cater to your needs. Don't hesitate to ask me anything that comes to mind, as I am committed to providing you with comprehensive and valuable responses. Your satisfaction is my utmost priority!"
     }
   ]);
 
