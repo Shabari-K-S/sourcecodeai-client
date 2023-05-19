@@ -295,20 +295,41 @@ code {
 
 @media (max-width: 600px) {
   *{
-    font-size: 1rem;
+    font-size: 0.8rem;
     
-  }
-  .sidemenu {
-    display: none;
   }
 
   .chatarea {
     flex: 1;
+    margin-top: 20px;
     padding-top: 20px;
     height: 100%;
   }
   .chat-form{
     margin-bottom: 80px;
+  }
+  .sidemenu {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    background-color: #1e1e1e;
+    height: 50px;
+  }
+  .side-menu-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    border: 1px solid #c4c4c4;
+
+    margin-top: 0;
+    padding: 12px;
+    padding-left: 20px;
+    padding-right: 20px; 
+    border-radius: 8px;
   }
 }
 
