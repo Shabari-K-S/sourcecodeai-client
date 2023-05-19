@@ -290,6 +290,7 @@ code {
   .chatarea {
     flex: 1;
     padding-top: 20px;
+    height: 90vh
   }
 }
 
