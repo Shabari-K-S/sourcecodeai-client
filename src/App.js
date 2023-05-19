@@ -11,6 +11,7 @@ function App() {
     {
       "user" : "gpt",
       "message": " I am AI chat bot how can I help you... "
+    }
   ]);
 
   //clear chat log
