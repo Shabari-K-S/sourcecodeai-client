@@ -159,7 +159,7 @@
 .chat-log {
   flex: 1;
   overflow-y: auto;
-  padding: 20px;
+  padding: 30px;
 }
 
 .chat-form {
@@ -306,6 +306,9 @@ code {
     flex: 1;
     padding-top: 20px;
     height: 100%;
+  }
+  .chat-form{
+    margin-bottom: 45px;
   }
 }
 
