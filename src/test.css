@@ -1,0 +1,24 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.code-container {
+    background-color: black;
+    padding: 20px;
+}
+
+.language-heading {
+    color: white;
+}
+
+.language {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: black;
+    border: 2px solid red;
+    border-radius: 8px;
+}
