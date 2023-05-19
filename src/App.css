@@ -1,10 +1,9 @@
-
 *{
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: white;
   margin: 0;
   padding: 0;
-  font-size: 1.2rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .App {
   display: flex;
@@ -64,12 +63,13 @@
 }
 
 .chat-message-container {
-  display: flex;
-  justify-content: flex-start;
   margin-bottom: 20px;
 }
 
 .chat-message {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   margin-block: auto;
   max-width: 80%;
   padding: 10px;
@@ -89,8 +89,10 @@
 
 
 .avatar {
+  all:unset;
   top: 0;
   margin-right: 10px;
+  width:40px;height: 40px;
 }
 
 
@@ -148,15 +150,15 @@ code {
   color: #ff9800;
 }
 .chat-log {
-  scrollbar-width: none; 
-  -ms-overflow-style: none; 
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
   flex: 1;
-  overflow-y: auto;
+  overflow-y: scroll;
   padding: 20px;
 }
 
 .chat-log::-webkit-scrollbar {
-  display: none; 
+  display: none; /* Chrome, Safari, and Opera */
 }
 
 .sidemenu {
@@ -166,10 +168,14 @@ code {
   border: 1px solid #212023;
 }
 
+/* Media queries for responsiveness */
+
+/* Mobile */
 
 @media (max-width: 600px) {
   *{
-    font-size:0.9rem;
+    font-size: 0.8rem;
+    
   }
   .sidemenu {
     display: none;
@@ -178,6 +184,7 @@ code {
   .chatarea {
     flex: 1;
     padding-top: 20px;
+    height: 100%;
   }
 }
 
@@ -186,3 +193,5 @@ code {
     max-width: 90%;
   }
 }
+
+
