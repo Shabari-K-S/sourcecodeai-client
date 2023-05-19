@@ -2,27 +2,6 @@ import React, {useState} from 'react'
 import './App.css'
 import './normalize.css'
 import MessageWithCode from './MessageWithCode';
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyDsZ3IdZSTiByXqzRFEfTAIgIowunxhVHY",
-  authDomain: "sourcecodeai.firebaseapp.com",
-  projectId: "sourcecodeai",
-  storageBucket: "sourcecodeai.appspot.com",
-  messagingSenderId: "626799481877",
-  appId: "1:626799481877:web:3fb65319723dd9fc9e2a1c",
-  measurementId: "G-0KZK5B64Z5"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 
 
 function App() {
@@ -84,7 +63,7 @@ function App() {
         </div>
         <form className='chat-form' onSubmit={handleSubmit}>
           <div className='chat-input-holder'>
-            <input className='chat-input-textarea' rows='1' value={input} onChange={(e) => setInput(e.target.value)}></input>
+            <input className='chat-input-textarea' rows='1' value={input} onChange={(e) => setInput(e.target.value)} placeholder="Type your prompt here...."></input>
           </div>
         </form>
       </section>
