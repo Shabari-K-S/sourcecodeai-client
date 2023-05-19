@@ -9,8 +9,12 @@ function App() {
   const [input, setInput] = useState("");
   const [chatLog, setChatLog] = useState([
     {
+      "user" : "me",
+      "message": "Who are you?"
+    },
+    {
       "user" : "gpt",
-      "message": " I am AI chat bot how can I help you... "
+      "message": "Welcome! I'm an AI assistant developed by Shabari, and my primary goal is to ensure you have the best possible experience. \nI'm equipped with extensive knowledge and advanced capabilities, allowing me to provide you with accurate information, address your inquiries, and offer assistance in various areas. \nFrom tackling intricate problem-solving tasks to providing guidance on specific subjects, I'm here to support you. \nAdditionally, if you're in the mood for a friendly chat,\nI'm more than happy to engage in a conversation with you. \nDon't hesitate to ask me anything you'd like—I'm here to provide you with comprehensive and helpful responses."
     }
   ]);
 
