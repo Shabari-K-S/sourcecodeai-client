@@ -87,11 +87,11 @@ const ChatMessage = ({ message }) => {
         <div className="chat-message-center">
           <div className={`avatar ${message.user === 'gpt' && 'chatbot'}`}>
             {message.user === 'gpt' && (
-              <img
-                width="40"
-                height="40"
-                src="https://img.icons8.com/color/48/artificial-intelligence.png"
-                alt="artificial-intelligence"
+              <img 
+                width="40" 
+                height="40" 
+                src="https://img.icons8.com/3d-fluency/94/chatbot.png" 
+                alt="chatbot"
               />
             )}
             {message.user === 'me' && (
