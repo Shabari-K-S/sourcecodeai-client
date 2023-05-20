@@ -123,7 +123,7 @@ const ChatMessage = ({ message }) => {
               <img
                 width="40"
                 height="40"
-                src="https://img.icons8.com/color/48/artificial-intelligence.png"
+                src="https://img.icons8.com/3d-fluency/94/chatbot.png"
                 alt="artificial-intelligence"
               />
             )}
