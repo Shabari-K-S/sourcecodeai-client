@@ -158,28 +158,31 @@
 
 .chat-log {
   flex: 1;
-  overflow-y: auto;
-  padding: 30px;
+  overflow-y: hidden;
+  padding: 20px;
 }
 
 .chat-form {
   display: flex;
   padding: 10px;
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .chat-input-holder {
   flex: 1;
+  border-radius: 5px;
+  display: flex;
+  background-color: #1e1e1e;
+  border: 1px solid #333;
 }
 
 .chat-input-textarea {
   outline: none;
-  width: 100%;
+  width: 90%;
   padding: 10px;
-  border: 1px solid #333;
-  border-radius: 5px;
-  resize: none;
   background-color: #1e1e1e;
+  border: none;
+  resize: none;
   color: #fff;
 }
 
@@ -237,7 +240,7 @@
   background-color: #464646;
   border-radius: 4px;
   padding: 8px;
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 
 .language-python {
@@ -274,7 +277,7 @@ code {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
   flex: 1;
-  overflow-y: scroll;
+  overflow-y: hidden;
   padding: 20px;
 }
 
@@ -340,3 +343,53 @@ code {
 }
 
 
+/* Hide the scrollbar for the entire application */
+body {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: transparent transparent; /* For Firefox */
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem; /* Set the width of the scrollbar */
+  background-color: transparent; /* Set the background color of the scrollbar track */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Set the color of the scrollbar thumb */
+}
+
+/* Add custom styles to the chat log container to hide its scrollbar */
+.chat-log {
+  overflow-y: auto; /* Enable vertical scrolling */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: transparent transparent; /* For Firefox */
+}
+
+.chat-log::-webkit-scrollbar {
+  width: 0.5rem; /* Set the width of the scrollbar */
+  background-color: transparent; /* Set the background color of the scrollbar track */
+}
+
+.chat-log::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Set the color of the scrollbar thumb */
+}
+
+.chat-message-container {
+  opacity: 0;
+  animation: fade-in 0.5s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.ani{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
