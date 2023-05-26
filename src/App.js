@@ -95,12 +95,12 @@ function App() {
         </div>
         <form className="chat-form" onSubmit={handleSubmit} ref={chatFormRef}>
           <div className="chat-input-holder">
-            <textarea
+            <input
               className="chat-input-textarea"
               rows="1"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-            ></textarea>
+            ></input>
             <div className="ani">{isLoading && <LoadingAnimation />}</div>
           </div>
         </form>
